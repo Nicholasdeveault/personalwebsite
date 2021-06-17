@@ -49,7 +49,9 @@ const Container = styled.div`
   position: fixed;
   top: 0;
   width: 50vw;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  z-index: 10;
 
   a:nth-child(n) {
     color: white;
@@ -77,6 +79,7 @@ const Container = styled.div`
 
   @media (max-width: 800px) {
     display: none;
+    z-index: 10;
   }
 `;
 
@@ -98,7 +101,6 @@ const Resume = styled.a`
 const AboutLink = styled.a`
   text-decoration: none;
   color: white;
-  scroll-behavior: smooth;
 `;
 
 const HomeLink = styled.a`

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ScrollAnimation from "react-animate-on-scroll";
 // import arrow from "../images/arrow.jpg";
 
 const About = () => {
@@ -7,13 +8,15 @@ const About = () => {
     <>
       <Div>
         <Img src="/images/me.jpg" />
-        <Me>This is me!</Me>
-        {/* <ArrowImg src={arrow} /> */}
-        <Info>
-          I am someone who is very imaginative, open-minded and curious,
-          energized by social interaction and focusing on social harmony and
-          cooperation. I value clarity, structure and planning.
-        </Info>
+        <ScrollAnimation animateIn="fadeIn">
+          <Me>This is me!</Me>
+          {/* <ArrowImg src={arrow} /> */}
+          <Info>
+            I am someone who is very imaginative, open-minded and curious,
+            energized by social interaction and focusing on social harmony and
+            cooperation. I value clarity, structure and planning.
+          </Info>
+        </ScrollAnimation>
       </Div>
     </>
   );
