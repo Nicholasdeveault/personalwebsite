@@ -15,6 +15,5 @@ html, body, div,
     text {
         font-family: 'Staatliches', cursive;
         scroll-behavior: smooth;
-
     }
 `;

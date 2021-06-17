@@ -76,7 +76,6 @@ const Img = styled.img`
   @media (max-width: 600px) {
     height: 300px;
     width: 230px;
-    /* margin-right: 240px; */
     margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 25px #ffffff;
@@ -91,8 +90,7 @@ const Me = styled.p`
   top: 130%;
   transform: rotate(-8deg);
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
-  animation: flicker 1.5s infinite alternate;
+    0 0 82px #0fa;
   z-index: -2;
 
   @media (max-width: 1200px) {
@@ -104,7 +102,6 @@ const Me = styled.p`
     transform: rotate(-8deg);
     text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
       0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
-    animation: flicker 1.5s infinite alternate;
     z-index: -2;
   }
 
@@ -117,7 +114,6 @@ const Me = styled.p`
     transform: rotate(-8deg);
     text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
       0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
-    animation: flicker 1.5s infinite alternate;
     z-index: -2;
   }
 `;
