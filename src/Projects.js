@@ -18,7 +18,7 @@ const Projects = () => {
               </Video>
               <Description>
                 This project was intended for a judo school. The goal was to
-                make it easy for the teacher to create his day to day classes by
+                make it easy for the teacher to create his day-to-day classes by
                 selecting each exercise and refer to them when needed.
               </Description>
             </Project1>
@@ -31,13 +31,9 @@ const Projects = () => {
                 />
               </Video1>
               <Description>
-                During my time at Concordia, one of the most exciting challenge
+                During my time at Concordia, one of the most exciting challenges
                 I faced was through building an e-commerce website. As a team,
                 we inspired one another to make our ideas come to life.
-                {/* During my time at Concordia, one of the best project we had to
-                do was an online E-Commerce website. We had to work in teams,
-                come up with ideas together and help eachother with our
-                different strengths and weaknesses. */}
               </Description>
             </Project2>
           </Work>
