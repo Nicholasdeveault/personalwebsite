@@ -26,7 +26,6 @@ export default Sidebar;
 
 const Container = styled.div`
   width: 320px;
-  /* border: 2px solid blue; */
   display: flex;
   justify-content: space-between;
   margin-right: 65px;
@@ -39,7 +38,8 @@ const Container = styled.div`
     display: flex;
     right: ${(props) => (props.open ? "0" : "-450px")};
     transition-duration: 1s;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
 
     a:nth-child(n) {
       display: block;

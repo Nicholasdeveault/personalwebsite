@@ -1,20 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import ScrollAnimation from "react-animate-on-scroll";
-// import arrow from "../images/arrow.jpg";
 
 const About = () => {
   return (
     <>
       <Div>
-        <Img src="/images/me.jpg" />
+        <Img src="/images/unnamed.jpg" />
         <ScrollAnimation animateIn="fadeIn">
           <Me>This is me!</Me>
-          {/* <ArrowImg src={arrow} /> */}
           <Info>
-            I am someone who is very imaginative, open-minded and curious,
-            energized by social interaction and focusing on social harmony and
-            cooperation. I value clarity, structure and planning.
+            Hi! My name is Nicholas and I am someone who is very imaginative,
+            open-minded and curious. I am energized by social interaction and
+            focusing on social harmony and cooperation. I value clarity,
+            structure and planning.
           </Info>
         </ScrollAnimation>
       </Div>
@@ -64,21 +63,77 @@ const Img = styled.img`
   width: 600px;
   margin-left: 100px;
   border-radius: 40px;
-  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 25px #ffffff;
+  zoom: 120%;
+  animation: flicker 3s infinite alternate;
+
+  @keyframes flicker {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+      box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #fff;
+    }
+
+    20%,
+    24%,
+    55% {
+      box-shadow: none;
+    }
+  }
 
   @media (max-width: 1200px) {
     height: 400px;
     width: 300px;
     border-radius: 20px;
-    box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 25px #ffffff;
+    zoom: 100%;
+    animation: flicker 3s infinite alternate;
+
+    @keyframes flicker {
+      0%,
+      18%,
+      22%,
+      25%,
+      53%,
+      57%,
+      100% {
+        box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #fff;
+      }
+
+      20%,
+      24%,
+      55% {
+        box-shadow: none;
+      }
+    }
   }
 
   @media (max-width: 600px) {
     height: 300px;
-    width: 230px;
+    width: 190px;
     margin-bottom: 20px;
     border-radius: 20px;
-    box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 25px #ffffff;
+    animation: flicker 3s infinite alternate;
+
+    @keyframes flicker {
+      0%,
+      18%,
+      22%,
+      25%,
+      53%,
+      57%,
+      100% {
+        box-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #fff;
+      }
+
+      20%,
+      24%,
+      55% {
+        box-shadow: none;
+      }
+    }
   }
 `;
 
@@ -117,14 +172,3 @@ const Me = styled.p`
     z-index: -2;
   }
 `;
-
-// const ArrowImg = styled.img`
-//   /* border: 2px solid blue; */
-//   width: 80px;
-//   height: 80px;
-//   position: absolute;
-//   right: 73%;
-//   top: 142%;
-//   transform: rotate(-10deg);
-//   z-index: -3;
-// `;

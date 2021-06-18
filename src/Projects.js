@@ -7,7 +7,6 @@ const Projects = () => {
     <>
       <Div>
         <ScrollAnimation animateIn="fadeIn">
-          {/* <Title>A little bit of what I've built</Title> */}
           <Work>
             <Project1>
               <P>Hibagon Judo Project</P>
@@ -18,9 +17,9 @@ const Projects = () => {
                 />
               </Video>
               <Description>
-                This project was intended for a judo school purposes. The goal
-                was to maked it easy for the teacher to create his day to day
-                classes and refer to them when needed.
+                This project was intended for a judo school. The goal was to
+                maked it easy for the teacher to create his day to day classes
+                by selecting each exercice and refer to them when needed.
               </Description>
             </Project1>
             <Project2>
@@ -34,8 +33,8 @@ const Projects = () => {
               <Description>
                 During my time at Concordia, one of the best project we had to
                 do was an online E-Commerce website. We had to work in teams,
-                come up with ideas together and help eachother with are
-                different strength and weaknesses.
+                come up with ideas together and help eachother with our
+                different strengths and weaknesses.
               </Description>
             </Project2>
           </Work>
@@ -66,33 +65,22 @@ const Div = styled.div`
   }
 `;
 
-// const Title = styled.p`
-//   font-size: 50px;
-//   color: white;
-//   position: relative;
-//   left: 35%;
-// `;
-
 const Work = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* margin-top: 50px; */
-  margin-left: 150px;
 
   @media (max-width: 1200px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 100px;
   }
 
   @media (max-width: 600px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 100px;
   }
 `;
 
@@ -111,6 +99,10 @@ const Project2 = styled.div`
 const P = styled.p`
   font-size: 45px;
   color: white;
+
+  @media (max-width: 600px) {
+    font-size: 40px;
+  }
 `;
 
 const Description = styled.p`
@@ -133,7 +125,7 @@ const Description = styled.p`
     color: white;
     border: 5px solid white;
     font-size: 25px;
-    margin: 20px;
+    margin-bottom: 80px;
     width: 50%;
   }
 `;
@@ -141,7 +133,7 @@ const Description = styled.p`
 const Video = styled.video`
   width: 60%;
   margin: 30px 0;
-  animation: flicker 1.5s infinite alternate;
+  animation: flicker 3s infinite alternate;
 
   @keyframes flicker {
     0%,
@@ -161,19 +153,24 @@ const Video = styled.video`
     }
   }
 
+  &:hover {
+    transition: ease-in 0.2s;
+    transform: rotate(5deg);
+  }
+
   @media (max-width: 1200px) {
     width: 50%;
     margin: 20px 50px;
   }
   @media (max-width: 600px) {
-    width: 50%;
+    width: 80%;
     margin: 20px 50px;
   }
 `;
 const Video1 = styled.video`
   width: 50%;
   margin: 20px 40px;
-  animation: flicker 1.5s infinite alternate;
+  animation: flicker 3s infinite alternate;
 
   @keyframes flicker {
     0%,
@@ -193,13 +190,18 @@ const Video1 = styled.video`
     }
   }
 
+  &:hover {
+    transition: ease-in 0.2s;
+    transform: rotate(5deg);
+  }
+
   @media (max-width: 1200px) {
     width: 50%;
     margin: 20px 50px;
   }
 
   @media (max-width: 600px) {
-    width: 50%;
+    width: 80%;
     margin: 20px 50px;
   }
 `;
@@ -208,6 +210,18 @@ const Socials = styled.div`
   position: fixed;
   bottom: -4%;
   margin: 70px 10px;
+
+  @media (max-width: 1200px) {
+    position: fixed;
+    bottom: -4%;
+    margin: 50px 10px;
+  }
+
+  @media (max-width: 600px) {
+    position: fixed;
+    bottom: -4%;
+    margin: 60px 10px;
+  }
 `;
 
 const LinkedinLink = styled.a`

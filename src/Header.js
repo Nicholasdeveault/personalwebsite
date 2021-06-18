@@ -125,6 +125,7 @@ const Hamburger = styled.div`
     display: flex;
     flex-direction: column;
     padding: 25px;
+    z-index: 10;
   }
 `;
 
