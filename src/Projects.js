@@ -55,7 +55,7 @@ export default Projects;
 
 const Div = styled.div`
   height: 80vh;
-  margin-top: 40px;
+  margin-top: 75px;
   @media (max-width: 1200px) {
     height: 80vh;
   }
