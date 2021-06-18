@@ -76,7 +76,45 @@ const Container = styled.div`
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 25%;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    width: 50vw;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    z-index: 10;
+
+    a:nth-child(n) {
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 10px;
+      :after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 3px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+      :hover:after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
     display: none;
     z-index: 10;
   }
@@ -120,7 +158,14 @@ const Hamburger = styled.div`
   right: 0;
   display: none;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+
+  @media (max-width: 600px) {
     display: flex;
     flex-direction: column;
     padding: 25px;

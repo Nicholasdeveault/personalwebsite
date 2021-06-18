@@ -98,6 +98,7 @@ const Img = styled.img`
     width: 300px;
     border-radius: 20px;
     zoom: 100%;
+    margin-bottom: 30px;
     animation: flicker 3s infinite alternate;
 
     @keyframes flicker {
@@ -123,7 +124,7 @@ const Img = styled.img`
     height: 300px;
     width: 190px;
     margin-left: 220px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     border-radius: 20px;
     animation: flicker 3s infinite alternate;
 
@@ -181,12 +182,11 @@ const Me = styled.p`
   }
 `;
 
-const Stack = styled.p`
+const Stack = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   margin-left: 50px;
-  /* margin-top: 100px; */
 `;
 
 const StackImg = styled.img`
@@ -196,7 +196,6 @@ const StackImg = styled.img`
 
   &:hover {
     transform: scale(1.2);
-    /* transform: rotate(5deg); */
   }
 
   @media (max-width: 600px) {

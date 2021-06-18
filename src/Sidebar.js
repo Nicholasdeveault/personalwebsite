@@ -34,7 +34,18 @@ const Container = styled.div`
   top: 0;
   right: 0;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 65px;
+    margin-top: 28px;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  @media (max-width: 600px) {
     display: flex;
     right: ${(props) => (props.open ? "0" : "-450px")};
     transition-duration: 1s;
