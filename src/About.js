@@ -27,7 +27,7 @@ const Info = styled.p`
   border: 5px solid white;
   color: white;
   font-size: 50px;
-  margin: 0 150px;
+  margin: 0 50px;
   padding: 40px;
 
   @media (max-width: 1200px) {
