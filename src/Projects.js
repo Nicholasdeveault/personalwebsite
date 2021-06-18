@@ -44,6 +44,9 @@ const Projects = () => {
             <GithubLink href="https://github.com/Nicholasdeveault">
               <Img src="/images/github.jpg" />
             </GithubLink>
+            <Mail>
+              <Img src="/images/mail.png" />
+            </Mail>
           </Socials>
         </ScrollAnimation>
       </Div>
@@ -232,8 +235,12 @@ const GithubLink = styled.a`
   margin: 10px;
 `;
 
+const Mail = styled.a`
+  margin: 10px;
+`;
+
 const Img = styled.img`
-  border-radius: 50%;
+  border-radius: 30%;
   height: 35px;
   width: 35px;
 

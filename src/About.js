@@ -8,7 +8,15 @@ const About = () => {
       <Div>
         <Img src="/images/unnamed.jpg" />
         <ScrollAnimation animateIn="fadeIn">
-          <Me>This is me!</Me>
+          {/* <Me>This is me!</Me> */}
+          <Me>A little bit about me.</Me>
+          <Stack>
+            <StackImg src="/images/js.png" />
+            <StackImg src="/images/react.jpg" />
+            <StackImg src="/images/html5.jpg" />
+            <StackImg src="/images/css.jpg" />
+            <StackImg src="/images/node.png" />
+          </Stack>
           <Info>
             Hi! My name is Nicholas and I am someone who is very imaginative,
             open-minded and curious. I am energized by social interaction and
@@ -61,7 +69,8 @@ const Div = styled.div`
 const Img = styled.img`
   height: 600px;
   width: 600px;
-  margin-left: 100px;
+  margin-left: 80px;
+  margin-right: 20px;
   border-radius: 40px;
   zoom: 120%;
   animation: flicker 3s infinite alternate;
@@ -113,7 +122,8 @@ const Img = styled.img`
   @media (max-width: 600px) {
     height: 300px;
     width: 190px;
-    margin-bottom: 20px;
+    margin-left: 220px;
+    margin-bottom: 10px;
     border-radius: 20px;
     animation: flicker 3s infinite alternate;
 
@@ -141,9 +151,6 @@ const Me = styled.p`
   display: flex;
   font-size: 50px;
   color: white;
-  /* position: absolute; */
-  /* right: 70%; */
-  /* top: 130%; */
   transform: rotate(-8deg);
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa;
@@ -154,7 +161,7 @@ const Me = styled.p`
     color: white;
     position: absolute;
     left: 7%;
-    top: 140%;
+    top: 130%;
     transform: rotate(-8deg);
     text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
       0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
@@ -171,5 +178,30 @@ const Me = styled.p`
     text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
       0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
     z-index: -2;
+  }
+`;
+
+const Stack = styled.p`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  /* margin-top: 100px; */
+`;
+
+const StackImg = styled.img`
+  height: 60px;
+  width: 60px;
+  margin: 10px 10px;
+
+  &:hover {
+    transform: scale(1.2);
+    /* transform: rotate(5deg); */
+  }
+
+  @media (max-width: 600px) {
+    height: 50px;
+    width: 50px;
+    margin: 10px 10px;
   }
 `;
