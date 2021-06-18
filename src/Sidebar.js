@@ -50,6 +50,7 @@ const Container = styled.div`
     right: ${(props) => (props.open ? "0" : "-450px")};
     transition-duration: 1s;
     background-color: rgba(0, 0, 0, 0);
+    width: 305px;
     z-index: 10;
 
     a:nth-child(n) {
