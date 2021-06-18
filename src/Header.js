@@ -13,7 +13,7 @@ const Header = () => {
           <HomeLink href="#home">Home</HomeLink>
           <AboutLink href="#about">About</AboutLink>
           <Projects href="#projects">Projects</Projects>
-          <Resume href="https://github.com/Nicholasdeveault/Portfolio/raw/main/Resume-English.pdf">
+          <Resume href="https://github.com/Nicholasdeveault/personalwebsite/raw/main/Resume-English.pdf">
             Resume
           </Resume>
           <Profile href="https://www.linkedin.com/in/nicholas-deveault/">

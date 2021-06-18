@@ -138,11 +138,13 @@ const Img = styled.img`
 `;
 
 const Me = styled.p`
+  display: flex;
+  justify-content: flex-start;
   font-size: 50px;
   color: white;
-  position: absolute;
-  right: 70%;
-  top: 130%;
+  /* position: absolute; */
+  /* right: 70%; */
+  /* top: 130%; */
   transform: rotate(-8deg);
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa;
