@@ -139,7 +139,6 @@ const Img = styled.img`
 
 const Me = styled.p`
   display: flex;
-  justify-content: flex-start;
   font-size: 50px;
   color: white;
   /* position: absolute; */
