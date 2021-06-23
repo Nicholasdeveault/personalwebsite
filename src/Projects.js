@@ -19,7 +19,15 @@ const Projects = () => {
               <Description>
                 This project was intended for a judo school. The goal was to
                 make it easy for the teacher to create his day-to-day classes by
-                selecting each exercise and refer to them when needed.
+                selecting each exercise and refer to them when needed.<br></br>
+                <br></br>
+                <StackImg src="/images/js.png" />
+                <StackImg src="/images/react.jpg" />
+                <StackImg src="/images/html5.jpg" />
+                <StackImg src="/images/css.jpg" />
+                <StackImg src="/images/node.png" />
+                <StackImg src="/images/redux.png" />
+                {/* JavaScript - React - Redux - Node.js - Express */}
               </Description>
             </Project1>
             <Project2>
@@ -33,7 +41,13 @@ const Projects = () => {
               <Description>
                 During my time at Concordia, one of the most exciting challenges
                 I faced was through building an e-commerce website. As a team,
-                we inspired one another to make our ideas come to life.
+                we inspired one another to make our ideas come to life.<br></br>
+                <br></br> <StackImg src="/images/js.png" />
+                <StackImg src="/images/react.jpg" />
+                <StackImg src="/images/html5.jpg" />
+                <StackImg src="/images/css.jpg" />
+                <StackImg src="/images/node.png" />
+                {/* JavaScript - React - Node.js - Express */}
               </Description>
             </Project2>
           </Work>
@@ -44,7 +58,7 @@ const Projects = () => {
             <GithubLink href="https://github.com/Nicholasdeveault">
               <Img src="/images/github.jpg" />
             </GithubLink>
-            <Mail>
+            <Mail href="mailto: nicholasdeveault@gmail.com">
               <Img src="/images/mail.png" />
             </Mail>
           </Socials>
@@ -55,6 +69,22 @@ const Projects = () => {
 };
 
 export default Projects;
+
+const StackImg = styled.img`
+  height: 60px;
+  width: 60px;
+  margin: 10px 10px;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  @media (max-width: 600px) {
+    height: 50px;
+    width: 50px;
+    margin: 10px 10px;
+  }
+`;
 
 const Div = styled.div`
   height: 80vh;

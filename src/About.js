@@ -7,6 +7,7 @@ const About = () => {
     <>
       <Div>
         <Img src="/images/unnamed.jpg" />
+
         <ScrollAnimation animateIn="fadeIn">
           {/* <Me>This is me!</Me> */}
           <Me>A little bit about me.</Me>
@@ -16,6 +17,14 @@ const About = () => {
             <StackImg src="/images/html5.jpg" />
             <StackImg src="/images/css.jpg" />
             <StackImg src="/images/node.png" />
+            <StackImg src="/images/redux.png" />
+            <Learning>
+              {/* <P>Expending my knowledge</P> */}
+              <P>Learning: </P>
+              <LearnImg src="/images/seo.png" />
+              <LearnImg src="/images/mysql.png" />
+              <LearnImg src="/images/typescript.png" />
+            </Learning>
           </Stack>
           <Info>
             Hi! My name is Nicholas and I am someone who is very imaginative,
@@ -42,7 +51,7 @@ const Info = styled.p`
     color: white;
     border: 5px solid white;
     font-size: 35px;
-    margin: 60px;
+    margin: 20px;
   }
 
   @media (max-width: 600px) {
@@ -59,10 +68,9 @@ const Div = styled.div`
   align-items: center;
   height: 100vh;
 
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
 `;
 
@@ -95,10 +103,11 @@ const Img = styled.img`
 
   @media (max-width: 1200px) {
     height: 400px;
-    width: 300px;
+    width: 270px;
     border-radius: 20px;
     zoom: 100%;
     margin-bottom: 30px;
+    margin-left: 40%;
     animation: flicker 3s infinite alternate;
 
     @keyframes flicker {
@@ -123,8 +132,7 @@ const Img = styled.img`
   @media (max-width: 600px) {
     height: 300px;
     width: 190px;
-    margin-left: 220px;
-    margin-bottom: 30px;
+    margin-left: 180px;
     border-radius: 20px;
     animation: flicker 3s infinite alternate;
 
@@ -153,8 +161,8 @@ const Me = styled.p`
   font-size: 50px;
   color: white;
   transform: rotate(-8deg);
-  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-    0 0 82px #0fa;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #00bfff,
+    0 0 82px #00bfff;
   z-index: -2;
 
   @media (max-width: 1200px) {
@@ -162,31 +170,36 @@ const Me = styled.p`
     color: white;
     position: absolute;
     left: 7%;
-    top: 130%;
+    top: 145%;
     transform: rotate(-8deg);
-    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-      0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #00bfff,
+      0 0 82px #00bfff, 0 0 92px #00bfff, 0 0 102px #00bfff, 0 0 151px #00bfff;
     z-index: -2;
   }
 
   @media (max-width: 600px) {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     position: absolute;
     right: 0;
-    top: 135%;
+    top: 125%;
     transform: rotate(-8deg);
-    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
-      0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #00bfff,
+      0 0 82px #00bfff, 0 0 92px #00bfff, 0 0 102px #00bfff, 0 0 151px #00bfff;
     z-index: -2;
   }
 `;
 
 const Stack = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  margin-left: 50px;
+  justify-content: flex-end;
+  margin-right: 50px;
+
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
 `;
 
 const StackImg = styled.img`
@@ -202,5 +215,44 @@ const StackImg = styled.img`
     height: 50px;
     width: 50px;
     margin: 10px 10px;
+  }
+`;
+
+const Learning = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+`;
+
+const P = styled.p`
+  color: white;
+  font-size: 30px;
+`;
+
+const LearnImg = styled.img`
+  height: 60px;
+  width: 60px;
+  margin: 10px 10px;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  @media (max-width: 600px) {
+    height: 50px;
+    width: 50px;
+    /* margin-left: 90px; */
+    /* margin: 10px 50px; */
   }
 `;
