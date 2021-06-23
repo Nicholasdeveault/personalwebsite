@@ -71,6 +71,13 @@ const Div = styled.div`
   @media (max-width: 1200px) {
     display: flex;
     flex-direction: column;
+    height: 110vh;
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    height: 105vh;
   }
 `;
 
@@ -252,7 +259,5 @@ const LearnImg = styled.img`
   @media (max-width: 600px) {
     height: 50px;
     width: 50px;
-    /* margin-left: 90px; */
-    /* margin: 10px 50px; */
   }
 `;
