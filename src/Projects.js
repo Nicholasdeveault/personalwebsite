@@ -27,7 +27,6 @@ const Projects = () => {
                 <StackImg src="/images/css.jpg" />
                 <StackImg src="/images/node.png" />
                 <StackImg src="/images/redux.png" />
-                {/* JavaScript - React - Redux - Node.js - Express */}
               </Description>
             </Project1>
             <Project2>
@@ -47,7 +46,6 @@ const Projects = () => {
                 <StackImg src="/images/html5.jpg" />
                 <StackImg src="/images/css.jpg" />
                 <StackImg src="/images/node.png" />
-                {/* JavaScript - React - Node.js - Express */}
               </Description>
             </Project2>
           </Work>
@@ -79,6 +77,12 @@ const StackImg = styled.img`
     transform: scale(1.2);
   }
 
+  @media (max-width: 1200px) {
+    height: 50px;
+    width: 50px;
+    margin: 10px 10px;
+  }
+
   @media (max-width: 600px) {
     height: 50px;
     width: 50px;
@@ -87,15 +91,24 @@ const StackImg = styled.img`
 `;
 
 const Div = styled.div`
-  height: 80vh;
-  margin-top: 75px;
+  border: 2px solid blue;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: 1200px) {
-    height: 80vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   @media (max-width: 600px) {
-    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
   }
 `;
 
@@ -159,7 +172,6 @@ const Description = styled.p`
     color: white;
     border: 5px solid white;
     font-size: 25px;
-    margin-bottom: 80px;
     width: 50%;
   }
 `;
@@ -253,8 +265,6 @@ const Socials = styled.div`
 
   @media (max-width: 600px) {
     position: fixed;
-    bottom: -4%;
-    margin: 60px 10px;
   }
 `;
 

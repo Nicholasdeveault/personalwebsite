@@ -10,6 +10,7 @@ import Homepage from "./Homepage";
 import Header from "./Header";
 import About from "./About";
 import Projects from "./Projects";
+import SkillStack from "./skillStack";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
         </section>
         <section id="about">
           <About />
+        </section>
+        <section id="stack">
+          <SkillStack />
         </section>
         <section id="projects">
           <Projects />

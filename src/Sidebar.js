@@ -7,6 +7,7 @@ const Sidebar = ({ open, setOpen }) => {
       <Container open={open}>
         <HomeLink href="#home">Home</HomeLink>
         <AboutLink href="#about">About</AboutLink>
+        <StackLink href="#stack">Stack</StackLink>
         <Projects href="#projects">Projects</Projects>
         <Resume href="https://github.com/Nicholasdeveault/Portfolio/raw/main/Resume-English.pdf">
           Resume
@@ -81,6 +82,11 @@ const AboutLink = styled.a`
   text-decoration: none;
   color: white;
   display: none;
+`;
+
+const StackLink = styled.a`
+  text-decoration: none;
+  color: white;
 `;
 
 const HomeLink = styled.a`
