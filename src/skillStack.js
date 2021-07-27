@@ -90,7 +90,6 @@ const SkillStack = () => {
 };
 
 const Div = styled.div`
-  border: 2px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,15 +108,16 @@ const Div = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 150vh;
   }
 `;
 
 const Graphdiv = styled.div`
-  border: 2px solid green;
   display: flex;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-between;
+  /* justify-content: center; */
 
   @media (max-width: 1200px) {
     display: flex;
@@ -136,28 +136,31 @@ const Graphdiv = styled.div`
 
 const Graph = styled.div`
   display: flex;
-  width: 1200px;
-  margin-right: 100px;
+  width: 40vw;
+  margin-right: 80px;
 
   @media (max-width: 1200px) {
-    max-width: 800px;
+    width: 70vw;
+    margin: 50px 0;
   }
 
   @media (max-width: 600px) {
-    max-width: 500px;
-    margin: 0;
-    /* margin-left: 120px; */
-    /* margin-right: 150px; */
+    width: 80vw;
+    margin: 50px 0;
   }
 `;
 
 const Stack = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: 50px;
 
   @media (max-width: 1200px) {
-    flex-wrap: wrap;
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
   }
 `;
 
@@ -169,6 +172,10 @@ const Current = styled.div`
   }
 
   @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 120px;
   }
 `;
 
@@ -181,9 +188,15 @@ const StackImg = styled.img`
     transform: scale(1.2);
   }
 
+  @media (max-width: 1200px) {
+    height: 65px;
+    width: 65px;
+    margin: 10px 10px;
+  }
+
   @media (max-width: 600px) {
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
     margin: 10px 10px;
   }
 `;
@@ -199,7 +212,7 @@ const Learning = styled.div`
 
   @media (max-width: 600px) {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
   }
 `;
@@ -213,15 +226,32 @@ const LearnImg = styled.img`
     transform: scale(1.2);
   }
 
+  @media (max-width: 1200px) {
+    height: 65px;
+    width: 65px;
+    margin: 10px 10px;
+  }
+
   @media (max-width: 600px) {
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
+    margin: 10px 10px;
   }
 `;
 
 const P = styled.p`
   color: white;
   font-size: 40px;
+
+  @media (max-width: 1200px) {
+    color: white;
+    font-size: 30px;
+  }
+
+  @media (max-width: 600px) {
+    color: white;
+    font-size: 20px;
+  }
 `;
 
 export default SkillStack;

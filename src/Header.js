@@ -122,36 +122,43 @@ const Container = styled.div`
 `;
 
 const Profile = styled.a`
+  animation: fadeIn linear 2s;
   text-decoration: none;
   color: white;
 `;
 
 const GithubProfile = styled.a`
+  animation: fadeIn linear 2s;
   text-decoration: none;
   color: white;
 `;
 
 const Resume = styled.a`
+  animation: fadeIn linear 2s;
   text-decoration: none;
   color: white;
 `;
 
 const AboutLink = styled.a`
+  animation: fadeIn linear 2s;
   text-decoration: none;
   color: white;
 `;
 
 const HomeLink = styled.a`
+  animation: fadeIn linear 2s;
   text-decoration: none;
   color: white;
 `;
 
 const StackLink = styled.a`
+  animation: fadeIn linear 2s;
   text-decoration: none;
   color: white;
 `;
 
 const Projects = styled.a`
+  animation: fadeIn linear 2s;
   text-decoration: none;
   color: white;
 `;

@@ -17,6 +17,7 @@ const Homepage = () => {
 export default Homepage;
 
 const Container = styled.div`
+  animation: fadeIn linear 2s;
   background-image: url("https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2607&q=80");
   background-position: center;
   background-repeat: no-repeat;
@@ -27,6 +28,7 @@ const Container = styled.div`
   align-items: center;
 
   @media (max-width: 1200px) {
+    animation: fadeIn linear 2s;
     background-image: url("https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2607&q=80");
     background-position: center;
     background-repeat: no-repeat;
@@ -35,6 +37,7 @@ const Container = styled.div`
   }
 
   @media (max-width: 600px) {
+    animation: fadeIn linear 2s;
     background-image: url("https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2607&q=80");
     background-position: center;
     background-repeat: no-repeat;
@@ -44,11 +47,18 @@ const Container = styled.div`
 `;
 
 const Name = styled.p`
+  animation: fadeIn linear 2s;
+  /* -webkit-animation: fadeIn linear 2s; */
+  /* -moz-animation: fadeIn linear 4s; */
+  /* -o-animation: fadeIn linear 4s; */
+  /* -ms-animation: fadeIn linear 4s; */
+  padding: 20px;
   margin-top: 150px;
   font-size: 60px;
   color: white;
 
   @media (max-width: 1200px) {
+    animation: fadeIn linear 2s;
     margin-top: 160px;
     font-size: 35px;
     color: white;
@@ -56,6 +66,7 @@ const Name = styled.p`
   }
 
   @media (max-width: 600px) {
+    animation: fadeIn linear 2s;
     margin-top: 160px;
     font-size: 35px;
     color: white;

@@ -175,8 +175,9 @@ const Me = styled.p`
     color: white;
     position: absolute;
     right: 0;
-    top: 125%;
-    transform: rotate(-8deg);
+    left: 2%;
+    top: 145%;
+    transform: rotate(-12deg);
     text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #00bfff,
       0 0 82px #00bfff, 0 0 92px #00bfff, 0 0 102px #00bfff, 0 0 151px #00bfff;
     z-index: -2;

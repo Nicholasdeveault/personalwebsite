@@ -104,10 +104,10 @@ const Div = styled.div`
   }
 
   @media (max-width: 600px) {
+    height: 300vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* height: 100vh; */
   }
 `;
 
@@ -214,7 +214,7 @@ const Video = styled.video`
 `;
 const Video1 = styled.video`
   width: 55%;
-  margin: 20px 40px;
+  margin: 30px 0;
   animation: flicker 3s infinite alternate;
 
   @keyframes flicker {
@@ -264,6 +264,7 @@ const Socials = styled.div`
 
   @media (max-width: 600px) {
     position: fixed;
+    margin: 40px 10px;
   }
 `;
 
