@@ -15,6 +15,7 @@ const state = {
     "MySql",
     "SEO",
     "TypeScript",
+    "Ruby",
   ],
   datasets: [
     {
@@ -30,10 +31,11 @@ const state = {
         "rgb(50, 80, 255)",
         "rgb(204, 204, 204)",
         "rgb(245, 155, 50)",
+        "rgb(255, 10, 10)",
       ],
       borderColor: "rgba(0,0,0,1)",
       borderWidth: 2,
-      data: [72, 77, 85, 80, 60, 55, 50, 20, 55, 10],
+      data: [72, 77, 85, 80, 60, 55, 50, 20, 55, 5, 10],
     },
   ],
 };
@@ -77,6 +79,7 @@ const SkillStack = () => {
                 <LearnImg src="/images/seo.png" />
                 <LearnImg src="/images/mysql.png" />
                 <LearnImg src="/images/typescript.png" />
+                <LearnImg src="/images/ruby.png" />
               </Learning>
             </Stack>
           </Graphdiv>
@@ -87,6 +90,7 @@ const SkillStack = () => {
 };
 
 const Div = styled.div`
+  border: 2px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,6 +114,7 @@ const Div = styled.div`
 `;
 
 const Graphdiv = styled.div`
+  border: 2px solid green;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -118,27 +123,31 @@ const Graphdiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   @media (max-width: 600px) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 `;
 
 const Graph = styled.div`
   display: flex;
-  /* height: 1000px; */
   width: 1200px;
   margin-right: 100px;
 
   @media (max-width: 1200px) {
-    /* height: 600px; */
-    width: 800px;
+    max-width: 800px;
   }
 
   @media (max-width: 600px) {
+    max-width: 500px;
+    margin: 0;
+    /* margin-left: 120px; */
+    /* margin-right: 150px; */
   }
 `;
 

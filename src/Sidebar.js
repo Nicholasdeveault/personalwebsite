@@ -87,6 +87,7 @@ const AboutLink = styled.a`
 const StackLink = styled.a`
   text-decoration: none;
   color: white;
+  display: none;
 `;
 
 const HomeLink = styled.a`

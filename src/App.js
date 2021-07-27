@@ -9,8 +9,8 @@ import GlobalStyles from "./GlobalStyles";
 import Homepage from "./Homepage";
 import Header from "./Header";
 import About from "./About";
-import Projects from "./Projects";
 import SkillStack from "./skillStack";
+import Projects from "./Projects";
 
 function App() {
   return (

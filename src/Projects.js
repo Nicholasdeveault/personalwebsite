@@ -91,14 +91,13 @@ const StackImg = styled.img`
 `;
 
 const Div = styled.div`
-  border: 2px solid blue;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 
   @media (max-width: 1200px) {
-    height: 100vh;
+    height: 150vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,7 +107,7 @@ const Div = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
   }
 `;
 
